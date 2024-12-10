@@ -38,15 +38,14 @@ export default function ContactForm() {
         cursor: 'pointer',
         backgroundColor: '#14C57C',
         color: 'white'
-}
+    }
 
     return (
         <div className={s.formDiv}>
-            <h1 className={s.title}>Phonebook<FaRegAddressBook color='#14c57c'/></h1>
             <Formik initialValues={initialValues} validationSchema={FeedbackScheme} onSubmit={handleAddContact}>
             <Form className={s.form}>
                 <label htmlFor={nameId}>Name</label>
-                <Field type='text' id={nameId} name='name' className={s.inputs} />
+                    <Field type='text' id={nameId} name='name' className={s.inputs}/>
                 <ErrorMessage name='name' component='span' className={s.error}></ErrorMessage>
                 <label htmlFor={numberId}>Number</label>
                 <Field type='number' id={numberId} name='number' className={s.inputs} />

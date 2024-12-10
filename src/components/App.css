@@ -13,4 +13,7 @@
   flex-direction: column;
   gap: 40px;
   min-width: 400px;
+  background-image: url(/public/bg.png);
+  background-repeat: no-repeat;
+  background-position: right 20px top 90px;
 }

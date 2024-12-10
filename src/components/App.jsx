@@ -4,14 +4,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchContacts } from '../redux/contacts/operations'
 import ContactForm from './ContactForm/ContactForm'
 import SearchBox from './SearchBox/SearchBox'
-import { selectLoading } from '../redux/contacts/selectors'
-import { selectError } from '../redux/contacts/selectors'
 import Loader from './Loader/Loader'
 import ContactList from './ContactList/ContactList'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from '../pages/HomePage/HomePage'
+import AppBar from './AppBar/AppBar'
+import ContactsPage from '../pages/ContactsPage/ContactsPage'
 
 export default function App() {
-  const loading = useSelector(selectLoading)
-  const error = useSelector(selectError)
+  
   
 
   const dispatch = useDispatch()
@@ -21,10 +22,13 @@ export default function App() {
 
   return (
     <div className='mainWrapper'>
-      <ContactForm />
-      <SearchBox />
-      {loading && !error && <Loader />}
-      <ContactList/>
+      <AppBar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/contacts' element={<ContactsPage />} />
+      </Routes>
+      
+      
     </div>
   )
 }

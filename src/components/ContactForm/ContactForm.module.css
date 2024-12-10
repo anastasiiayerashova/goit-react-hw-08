@@ -7,6 +7,9 @@
   border: 1px solid #14c57c;
   padding: 20px;
   border-radius: 8px;
+
+  width: 500px;
+  margin: 0 auto;
 }
 
 .formDiv {

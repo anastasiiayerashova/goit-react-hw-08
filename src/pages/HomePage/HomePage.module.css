@@ -1,0 +1,34 @@
+@keyframes pulseBackground {
+  0% {
+    background-size: 50%;
+  }
+  50% {
+    background-size: 60%;
+  }
+  100% {
+    background-size: 50%;
+  }
+}
+
+.homeWrapper {
+  background-image: url(/public/bg.png);
+  background-position: right 20px top 80px;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  animation: pulseBackground 3s infinite ease-in-out;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  color: #14c57c;
+}
+
+.text {
+  color: #f9f9f9;
+  letter-spacing: 0.2px;
+  line-height: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+}
