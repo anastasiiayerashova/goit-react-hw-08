@@ -1,0 +1,25 @@
+.findDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  color: #f0f0f0;
+}
+
+.input {
+  border-radius: 8px;
+  padding: 4px;
+  padding-left: 10px;
+  outline: none;
+  width: 95%;
+  border: none;
+  height: 20px;
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

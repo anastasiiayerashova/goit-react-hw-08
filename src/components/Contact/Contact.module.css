@@ -1,0 +1,26 @@
+.item {
+  border: 1px solid #14c57c;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.iconsDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.itemDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
