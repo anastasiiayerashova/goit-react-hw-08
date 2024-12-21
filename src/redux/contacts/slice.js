@@ -1,6 +1,7 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
 import { addContact, deleteContact, fetchContacts } from "./operations";
 import toast from 'react-hot-toast';
+import { logout } from "../auth/operations";
 
 const initialState = {
     items: [],
@@ -27,6 +28,11 @@ const slice = createSlice({
                 state.loading = false
                 state.error = null
                 state.items = state.items.filter(item => item.id !== action.payload)
+            })
+            .addCase(logout.fulfilled, (state) => {
+                state.items = [],
+                state.error = null
+                state.loading = false
             })
             .addMatcher(isAnyOf(fetchContacts.pending, addContact.pending, deleteContact.pending), (state) => {
                 state.loading = true

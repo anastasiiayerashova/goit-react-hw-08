@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid #14c57c;
+  padding: 20px;
+  border-radius: 8px;
+
+  width: 500px;
+  margin: 0 auto;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.inputs {
+  border-radius: 8px;
+  padding: 4px;
+  padding-left: 10px;
+  outline: none;
+  width: 489px;
+  border: none;
+  height: 20px;
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.addBtn {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error {
+  color: rgb(246, 59, 59);
+  font-size: 15px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #14c57c;
+}
+.pwdIcon {
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pwdCont {
+  position: relative;
+}
+
+.pwdIcon.line::after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 17px;
+  width: 25px;
+  height: 4px;
+  background-color: #14c57c;
+  transform: rotate(45deg);
+}
