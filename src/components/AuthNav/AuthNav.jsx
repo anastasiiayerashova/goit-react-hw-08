@@ -9,12 +9,8 @@ const buildLinkClass = ({ isActive }) => {
 export default function AuthNav () {
     return (
         <nav className={s.nav}>
-         <NavLink to='/register' className={buildLinkClass}>
-                Sign up
-            </NavLink>
-            <NavLink to='/login' className={buildLinkClass}>
-                Log in
-            </NavLink>
+         <NavLink to='/register' className={buildLinkClass}>Sign up</NavLink>
+         <NavLink to='/login' className={buildLinkClass}>Log in</NavLink>
         </nav>
 )
 }

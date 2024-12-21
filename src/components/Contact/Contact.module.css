@@ -1,7 +1,6 @@
 .item {
   border: 1px solid #14c57c;
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   gap: 30px;
   padding: 14px;
@@ -25,8 +24,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
-
+  color: #2a2d32;
   justify-content: center;
   max-width: 160px;
   margin: 0 auto;
+}
+
+.btnIcon {
+  background-color: transparent;
 }

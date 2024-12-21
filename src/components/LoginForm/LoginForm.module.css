@@ -7,15 +7,31 @@
   border: 1px solid #14c57c;
   padding: 20px;
   border-radius: 8px;
-
   width: 500px;
   margin: 0 auto;
+}
+
+@keyframes pulseBackground {
+  0% {
+    background-size: 50%;
+  }
+  50% {
+    background-size: 60%;
+  }
+  100% {
+    background-size: 50%;
+  }
 }
 
 .formDiv {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-image: url(/public/bg.png);
+  background-repeat: no-repeat;
+  background-position: right 20px top 70px;
+  min-height: 500px;
+  animation: pulseBackground 3s infinite ease-in-out;
 }
 
 .title {
@@ -42,8 +58,10 @@
   margin: 0 auto;
   margin-top: 10px;
   display: flex;
+  color: #f0f0f0;
   align-items: center;
   gap: 8px;
+  font-size: 20px;
 }
 
 .error {
@@ -59,13 +77,13 @@
 .link {
   color: #14c57c;
 }
+
 .pwdIcon {
   background-color: transparent;
   position: absolute;
   right: 10px;
   top: 60%;
   transform: translateY(-50%);
-
   border: none;
   cursor: pointer;
   outline: none;

@@ -44,6 +44,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 20px;
+  color: #2a2d32;
 }
 
 .error {

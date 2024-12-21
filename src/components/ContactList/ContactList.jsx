@@ -1,10 +1,8 @@
 import s from './ContactList.module.css'
 import Contact from '../Contact/Contact'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { selectFilteredContacts } from '../../redux/contacts/selectors'
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
-import { fetchContacts } from '../../redux/contacts/operations'
 
 const listAnimation = {
   hidden: {
@@ -19,7 +17,6 @@ const listAnimation = {
 }
 
 export default function ContactList() {
-  
   const contacts = useSelector(selectFilteredContacts)
 
   return (

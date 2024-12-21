@@ -8,6 +8,7 @@ import { selectIsLoggedIn, selectUser } from '../../redux/auth/selectors'
 export default function AppBar() {
     const isLoggedIn = useSelector(selectIsLoggedIn)
     const userEmail = useSelector(selectUser)
+    
     return (
         <header className={s.header}>
             <Navigation />

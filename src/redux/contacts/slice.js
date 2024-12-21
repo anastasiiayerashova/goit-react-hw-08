@@ -1,5 +1,5 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
-import { addContact, deleteContact, fetchContacts } from "./operations";
+import { addContact, deleteContact, editContactName, editContactNumber, fetchContacts } from "./operations";
 import toast from 'react-hot-toast';
 import { logout } from "../auth/operations";
 
@@ -32,6 +32,20 @@ const slice = createSlice({
             .addCase(logout.fulfilled, (state) => {
                 state.items = [],
                 state.error = null
+                state.loading = false
+            })
+            .addCase(editContactName.fulfilled, (state, action) => {
+                const index = state.items.findIndex(item => item.id === action.payload.id);
+                if (index >= 0) {
+                    state.items[index] = action.payload;  
+                } 
+                state.loading = false
+            })
+            .addCase(editContactNumber.fulfilled, (state, action) => {
+                const index = state.items.findIndex(item => item.id === action.payload.id)
+                if (index >= 0) {
+                    state.items[index] = action.payload
+                }
                 state.loading = false
             })
             .addMatcher(isAnyOf(fetchContacts.pending, addContact.pending, deleteContact.pending), (state) => {

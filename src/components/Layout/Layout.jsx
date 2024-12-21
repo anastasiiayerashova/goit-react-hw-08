@@ -4,8 +4,8 @@ import s from './Layout.module.css'
 export default function Layout({ children }) {
     return (
         <div className={s.mainWrapper}> 
-        <AppBar />
+            <AppBar />
             {children}
-            </div>
+        </div>
     )
 }

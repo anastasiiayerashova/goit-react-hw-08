@@ -1,10 +1,5 @@
 .list {
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px; */
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 5 колонок одинаковой ширины */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }

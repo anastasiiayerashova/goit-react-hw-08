@@ -12,14 +12,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}> 
       <PersistGate loading={null} persistor={persistor}> 
-    <BrowserRouter> 
-      
-    
-        <App />
-        
-        <Toaster/>
+        <BrowserRouter> 
+          <App />
+          <Toaster/>
         </BrowserRouter>
-        </PersistGate>
-      </Provider>
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 )
