@@ -30,7 +30,9 @@ const slice = createSlice({
                 state.user = action.payload.user
                 state.error = false
             })
-            .addCase(logout.fulfilled, () => initialState)
+            .addCase(logout.fulfilled, () => {
+                return initialState
+            })
             .addCase(refreshUser.pending, (state) => {
                state.isRefreshing = true
             })

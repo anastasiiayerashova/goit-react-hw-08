@@ -29,10 +29,8 @@ const slice = createSlice({
                 state.error = null
                 state.items = state.items.filter(item => item.id !== action.payload)
             })
-            .addCase(logout.fulfilled, (state) => {
-                state.items = [],
-                state.error = null
-                state.loading = false
+            .addCase(logout.fulfilled, () => {
+                return initialState
             })
             .addCase(editContactName.fulfilled, (state, action) => {
                 const index = state.items.findIndex(item => item.id === action.payload.id);
