@@ -16,14 +16,18 @@
   background-repeat: no-repeat;
   min-height: 500px;
   animation: pulseBackground 3s infinite ease-in-out;
+  padding: 0 20px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   margin-top: 35px;
   margin-bottom: 50px;
   color: #14c57c;
+  display: flex;
+  align-items: end;
+  line-height: 1.5;
 }
 
 .text {

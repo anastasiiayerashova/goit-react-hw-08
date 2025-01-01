@@ -17,7 +17,7 @@ import { FaRegAddressBook } from "react-icons/fa";
 export default function HomePage() {
     return (
         <motion.div className={s.homeWrapper} custom={1} variants={textAnimation} initial='hidden' animate='visible'> 
-            <motion.h1 className={s.title} custom={1} variants={textAnimation} initial='hidden' animate='visible'>Welcome to Your Personal Phonebook <FaRegAddressBook size={28} className={s.phoneIcon} /></motion.h1>
+            <motion.h1 className={s.title} custom={1} variants={textAnimation} initial='hidden' animate='visible'>Welcome to Your Personal Phonebook <FaRegAddressBook size={32} className={s.phoneIcon} /></motion.h1>
             <motion.p className={s.text} custom={2} variants={textAnimation} initial='hidden' animate='visible'>Effortlessly manage your contacts in one secure place.
                 Sign up today to create your account and start building your personal phonebook.
                 Add, filter, and delete contacts with ease. Stay organized and keep your important
