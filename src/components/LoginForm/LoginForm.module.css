@@ -7,7 +7,7 @@
   border: 1px solid #14c57c;
   padding: 20px;
   border-radius: 8px;
-  max-width: 375px;
+  /* max-width: 375px; */
   margin: 0 auto;
 }
 
@@ -32,6 +32,7 @@
   background-position: right 20px top 70px;
   min-height: 500px;
   animation: pulseBackground 3s infinite ease-in-out;
+  padding: 20px;
 }
 
 .title {
@@ -47,7 +48,7 @@
   padding: 4px;
   padding-left: 10px;
   outline: none;
-  min-width: 315px;
+  min-width: 270px;
   border: none;
   height: 20px;
   background-color: #2a2d32;
@@ -72,6 +73,7 @@
 .text {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .link {

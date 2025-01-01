@@ -5,16 +5,17 @@
   align-items: flex-start;
   gap: 15px;
   border: 1px solid #14c57c;
-  padding: 20px;
   border-radius: 8px;
-  min-width: 315px;
+  /* min-width: 315px; */
   margin: 0 auto;
+  padding: 20px;
 }
 
 .formDiv {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
 }
 
 .title {
@@ -30,7 +31,7 @@
   padding: 4px;
   padding-left: 10px;
   outline: none;
-  min-width: 315px;
+  min-width: 270px;
   border: none;
   height: 20px;
   background-color: #2a2d32;
@@ -55,6 +56,7 @@
 @media screen and (min-width: 768px) {
   .form {
     min-width: 500px;
+    padding: 20px;
   }
 
   .inputs {
