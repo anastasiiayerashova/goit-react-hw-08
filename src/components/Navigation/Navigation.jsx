@@ -16,7 +16,7 @@ export default function Navigation() {
                     Home
                 </span>
                 {' '}
-                <AiOutlineHome size={28} color='#f9f9f9'/>
+                <AiOutlineHome size={18} color='#f9f9f9' className={s.homeIcon} />
             </NavLink>
             <NavLink to='/contacts' className={buildLinkClass}>Contacts</NavLink>  
         </nav>

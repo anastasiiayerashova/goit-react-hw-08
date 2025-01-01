@@ -1,6 +1,6 @@
 .mainWrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  min-width: 400px;
+  gap: 10px;
+  min-width: 375px;
 }

@@ -9,7 +9,7 @@
   margin: 0;
   display: flex;
   align-items: center;
-  font-size: 29px;
+  font-size: 16px;
   color: #14c57c;
 }
 
@@ -18,7 +18,7 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   display: flex;
   gap: 5px;
   transition: 0.25s ease;
@@ -32,4 +32,19 @@
 .active {
   color: #f9f9f9;
   background-color: #14c57c;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 29px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .homeIcon {
+    width: 28px;
+    height: 28px;
+  }
 }

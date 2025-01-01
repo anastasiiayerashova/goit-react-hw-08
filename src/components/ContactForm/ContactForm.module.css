@@ -7,8 +7,7 @@
   border: 1px solid #14c57c;
   padding: 20px;
   border-radius: 8px;
-
-  width: 500px;
+  min-width: 315px;
   margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@
   padding: 4px;
   padding-left: 10px;
   outline: none;
-  width: 95%;
+  min-width: 315px;
   border: none;
   height: 20px;
   background-color: #2a2d32;
@@ -44,11 +43,25 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 16px;
   color: #2a2d32;
 }
 
 .error {
   color: rgb(246, 59, 59);
   font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    min-width: 500px;
+  }
+
+  .inputs {
+    width: 95%;
+  }
+
+  .addBtn {
+    font-size: 20px;
+  }
 }

@@ -19,6 +19,7 @@
 }
 
 .title {
+  font-size: 30px;
   font-weight: 700;
   margin-top: 35px;
   margin-bottom: 50px;
@@ -31,4 +32,15 @@
   line-height: 25px;
   max-width: 700px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .phoneIcon {
+    width: 32px;
+    height: 32px;
+  }
 }
