@@ -10,6 +10,15 @@
 }
 
 button {
-  font-size: 20px;
+  font-size: 14px;
   color: #f0f0f0;
+}
+
+.link {
+  font-size: 14px;
+  margin-left: 50px;
+}
+
+.logout {
+  margin-left: 50px;
 }

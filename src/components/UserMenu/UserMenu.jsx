@@ -20,7 +20,7 @@ export default function UserMenu() {
 
     return (
         <div className={s.wrapper}>   
-            <motion.button className={buildLinkClass} whileHover={hoverAnimation} onClick={() => dispatch(logout())}>Logout</motion.button>
+            <motion.button className={`${buildLinkClass} ${s.logout}`} whileHover={hoverAnimation} onClick={() => dispatch(logout())}>Logout</motion.button>
         </div>     
 )
 }
