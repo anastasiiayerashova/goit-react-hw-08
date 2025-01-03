@@ -20,5 +20,9 @@ button {
 }
 
 .logout {
-  margin-left: 50px;
+  margin-left: 60px;
+  font-size: 12px;
+  background-color: lightgray;
+  border: none;
+  color: black;
 }

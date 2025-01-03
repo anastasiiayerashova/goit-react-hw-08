@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 8px 0;
+  padding: 8px;
   margin-bottom: 16px;
   border-bottom: 1px solid #14c57c;
-  min-width: 375px;
+  max-width: 375px;
 }
 
 .userEmail {
@@ -16,5 +16,6 @@
   .header {
     gap: 52px;
     justify-content: space-between;
+    max-width: unset;
   }
 }
