@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 15px;
   color: #f0f0f0;
 }
 
@@ -103,5 +103,9 @@
 
   .inputs {
     width: 489px;
+  }
+
+  .addBtn {
+    font-size: 20px;
   }
 }

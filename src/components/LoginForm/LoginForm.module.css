@@ -62,7 +62,7 @@
   color: #f0f0f0;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .error {
@@ -114,5 +114,9 @@
 
   .inputs {
     width: 489px;
+  }
+
+  .addBtn {
+    font-size: 20px;
   }
 }
