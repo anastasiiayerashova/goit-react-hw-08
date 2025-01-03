@@ -6,7 +6,7 @@
 }
 
 .link {
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -15,6 +15,7 @@
   gap: 5px;
   transition: 0.25s ease;
   color: #f9f9f9;
+  border: 1px solid #14c57c;
 }
 
 .link:hover {
